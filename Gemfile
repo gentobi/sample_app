@@ -20,7 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails', '>= 4.3.1'
 
-gem 'pg', '>= 0.18.4'
+gem 'pg', '0.18.4'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -60,7 +60,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '>= 0.18.4'
+  gem 'pg', '0.18.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

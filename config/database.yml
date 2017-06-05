@@ -6,9 +6,10 @@
 #
 development:
   adapter: postgresql
-  database: my_database_development
+  database: my_database_dev
   pool: 5
-  timeout: 5000
+  encoding: unicode
+  
 test:
   adapter: postgresql
   database: my_database_test
