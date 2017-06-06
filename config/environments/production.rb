@@ -93,8 +93,8 @@ Rails.application.configure do
   address:              "smtp.gmail.com",
   port:                 587,
   domain:               "gmail.com",
-  user_name:            "tdlam7412@gmail.com",
-  password:             "tdlam7412",
+  user_name:            "crazytan94@gmail.com",
+  password:             "Pracetamol12",
   authentication:       "plain",
   enable_starttls_auto: true  }
   # Do not dump schema after migrations.
