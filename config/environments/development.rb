@@ -13,31 +13,11 @@ Rails.application.configure do
     config.action_controller.perform_caching = false
     config.cache_store = :null_store
   end
-  host = "localhost:3000"
   
-  config.action_mailer.default_url_options = {host: host, protocol: "https"}
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.perform_caching = false
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              "smtp.gmail.com",
-    port:                 587,
-    domain:               "gmail.com",
-    user_name:            "tannguyen@gmail.com",
-    password:             "123123",
-    authentication:       "plain",
-    enable_starttls_auto: true
-  }
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.perform_caching = false
-  config.active_support.deprecation = :log
-  config.active_record.migration_error = :page_load
-  config.assets.debug = true
-  config.assets.quiet = true
+  host = "localhost:3000"
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  host = 'example.com' 
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
