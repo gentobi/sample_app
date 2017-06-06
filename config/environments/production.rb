@@ -85,9 +85,26 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
-  
+
+ 
+ 
+
+  config.action_mailer.default_url_options = {:host => "obscure-scrubland-35039.herokuapp.com"}
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = {host: "https://obscure-scrubland-35039.herokuapp.com"}
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'gmail.com',
+  user_name:            'crazytan94@gmail.com',
+  password:             'Pracetamol12',
+  authentication:       'plain',
+  enable_starttls_auto: true  }
+
+=begin
+    config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = {host: "obscure-scrubland-35039.herokuapp.com"}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   :address => "smtp.gmail.com",
@@ -97,9 +114,6 @@ Rails.application.configure do
   :password => ENV['Pracetamol12'],
   :authentication => 'plain',
   :enable_starttls_auto => true }
-
-=begin
-  
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
