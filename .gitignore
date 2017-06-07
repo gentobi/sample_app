@@ -5,6 +5,8 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
+# Ignore uploaded test images.
+/public/uploads
 /.bundle
 
 # Ignore the default SQLite database.
