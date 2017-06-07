@@ -6,7 +6,7 @@
 
 # Ignore bundler config.
 # Ignore uploaded test images.
-/public/uploads
+#/public/uploads
 /.bundle
 
 # Ignore the default SQLite database.
